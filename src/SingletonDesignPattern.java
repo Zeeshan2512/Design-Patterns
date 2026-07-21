@@ -25,7 +25,7 @@ class ThreadSafeEagerSingleton{
 }
 ////////////////////// ThreadSafeDoubleLockingSingleton /////////////////
 class ThreadSafeDoubleLockingSingleton{
-    public static ThreadSafeDoubleLockingSingleton instance = null;
+    public static volatile ThreadSafeDoubleLockingSingleton instance = null;
     private ThreadSafeDoubleLockingSingleton(){
         System.out.println("ThreadSafeDoubleLockingSingleton constructor called");
     }
